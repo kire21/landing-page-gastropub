@@ -209,3 +209,20 @@ a {
   border: 2px solid var(--color-hero-header-link-text);
   margin: 0 auto;
 }
+
+.copyright {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.github {
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: black;
+}
+
+.github:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
+}
