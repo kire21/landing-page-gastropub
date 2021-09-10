@@ -1,0 +1,211 @@
+:root {
+  --color-hero-footer: #1f2937;
+  --color-hero-main-text: #f9faf8;
+  --color-hero-header-link-text: #e5e7eb;
+  --header-logo-text: #f9faf8;
+  --color-button-call-to-action: #3882f6;
+  --color-information-header-text: #1f2937;
+  --color-quote-section-background: #e5e7eb;
+  --color-quote-text: #1f2937;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+/* Flex */
+
+.flex {
+  display: flex;
+}
+
+.flex div {
+  flex: 1 1 auto;
+}
+
+/* Header & Navigation Sections */
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background: var(--color-hero-footer);
+  padding: 1rem 0;
+}
+
+.nav {
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+}
+
+.nav__item {
+  list-style-type: none;
+  color: var(--color-hero-header-link-text);
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.logo {
+  font-size: 2.4rem;
+  color: var(--color-hero-main-text);
+  margin-left: 20rem;
+}
+
+/* Hero Section */
+
+.hero {
+  background: var(--color-hero-footer);
+  padding: 8rem 0;
+}
+
+.hero__info {
+  margin-left: 15rem;
+  margin-right: 5rem;
+}
+
+.hero__heading {
+  font-size: 4.8rem;
+  font-weight: 900;
+  color: var(--color-hero-main-text);
+}
+
+.hero__text {
+  color: var(--color-hero-header-link-text);
+}
+
+.btn {
+  padding: 0.6rem 3rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: none;
+  background: var(--color-button-call-to-action);
+  color: var(--color-hero-main-text);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn__hero {
+  margin-top: 1.5rem;
+}
+
+.hero__img {
+  margin-right: 20rem;
+}
+
+.img {
+  width: 100%;
+}
+
+/* On Menu */
+
+.on__menu {
+  text-align: center;
+  margin: 4rem 0 10rem 0;
+}
+
+.on__menu--heading {
+  font-size: 3.6rem;
+  font-weight: 900;
+  color: var(--color-information-header-text);
+}
+
+.flex--4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin: 5rem 0;
+}
+
+.on__menu--item {
+  width: 20rem;
+  height: 20rem;
+  border: 2px solid var(--color-button-call-to-action);
+  border-radius: 10px;
+}
+
+.item--1 {
+  background: url(./images/gourmet-plates.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.item--2 {
+  background: url(./images/craft-brews.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.item--3 {
+  background: url(./images/wine-dish-parings.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.item--4 {
+  background: url(./images/desserts.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.on__menu--text {
+  margin-top: 1rem;
+  /* color: var(--color-hero-header-link-text); */
+}
+
+/* Quote */
+
+.quote {
+  background: var(--color-quote-section-background);
+  padding: 10rem 30rem;
+}
+
+.quote__text {
+  font-size: 3.6rem;
+  font-weight: 200;
+  font-style: italic;
+  color: var(--color-quote-text);
+}
+
+.quote__by {
+  text-align: end;
+  font-weight: 600;
+}
+
+/* Footer */
+
+.footer__call--to-action {
+  background: var(--color-button-call-to-action);
+  padding: 3rem 8rem;
+  height: 15rem;
+  width: 100rem;
+  border-radius: 10px;
+  margin: 10rem auto;
+  align-items: center;
+  color: var(--color-hero-header-link-text);
+}
+
+.btn__call--action {
+  border: 2px solid var(--color-hero-header-link-text);
+  margin: 0 auto;
+}
